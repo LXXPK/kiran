@@ -1,0 +1,40 @@
+#Write a Program to calculate the Simple Interest for Bank Customer for Fixed Deposit
+
+#a) If customer is Female & Senior Citizen, Rate - 8%
+
+#b) If customer is Female & Non Senior Citizen, Rate - 6%
+
+#c) If customer is Male & Senior Citizen, Rate - 7%
+
+#d) If customer is Male & Non Senior Citizen, Rate - 5%
+
+gender = (input("enter the gender"))
+sc = (input("if you are senior citizen(y/n)"))
+amount = int(input("enter the amount"))
+years=int(input("enter the number of years ")) 
+if gender == "female" and sc=="y":
+        rate = 8
+        intrest=(amount*rate*years)
+        totalamount=intrest+amount
+        print("total amount",totalamount)
+        print("the intrest is ",intrest)
+elif gender == "female" and sc!="y":
+        rate = 6
+        intrest=(amount*rate*years)
+        totalamount=intrest+amount
+        print("total amount",totalamount)
+        print("the intrest is ",intrest)
+elif gender == "male" and sc=="y":
+        rate = 7
+        intrest=(amount*rate*years)
+        totalamount=intrest+amount
+        print("total amount",totalamount)
+        print("the intrest is ",intrest)
+elif gender == "male" and sc!="y":
+        rate = 5
+        intrest=(amount*rate*years)
+        totalamount=intrest+amount
+        print("total amount",totalamount)
+        print("the intrest is ",intrest)
+else:
+        print("Invalid gender or senior citizen status.")
